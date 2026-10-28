@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Gaming - Inicio</title>
+
+    <!-- 1. CDN CSS BOOTSTRAP 5.3.3 (DIAPOSITIVA 4) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tu CSS Personalizado (mantiene tus colores y header) -->
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-wrap">
+                <img src="../Images/LOGO N.jpg" alt="Logo Mundo Gaming" id="logo-header" width="90" height="90">
+                <span class="insignia">Nuevo</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">INICIO</a></li>
+                    <li><a href="Acerca de.html">ACERCA DE</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <a href="login.html" class="btn-salir">Salir</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-4">
+
+        <div class="main-title text-center my-3">
+            <h1>MUNDO GAMING</h1>
+            <p class="subtitle fs-4">Página Web de Videojuegos y Hardware</p>
+        </div>
+
+        <section class="hero-section text-center my-3">
+            <p class="fs-5">Tu guía de periféricos de <span class="resaltado">alto rendimiento</span> y los mejores
+                videojuegos.</p>
+
+        </section>
+        <!-- SECCIÓN DE INVENTARIO CON ARRAYS (TALLER JS) -->
+        <section class="card my-4">
+            <div class="card-body">
+                <h2 class="card-title text-danger mb-3">Inventario Automático de Periféricos</h2>
+                <p>Lista general cargada desde JavaScript:</p>
+                <ul id="lista-inventario" class="list-group mb-3">
+                    <!-- JavaScript insertará los ítems aquí automáticamente -->
+                </ul>
+
+                <h3 class="h5 text-secondary">Periféricos Económicos (Filtro &lt; $300,000 COP):</h3>
+                <ul id="lista-filtrada" class="list-group">
+                    <!-- JavaScript insertará el filtro aquí -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PERIFÉRICOS CON GRILLA DE BOOTSTRAP (DIAPOSITIVA 5 Y 7) -->
+        <section class="Recomendados my-5">
+            <h2 class="text-center mb-2">Periféricos Recomendados</h2>
+            <p class="text-center mb-4">Contar con un hardware adecuado marca la diferencia en precisión, ergonomía y
+                tiempo de respuesta.</p>
+
+            <!-- CONTENEDOR DE GRILLA BOOTSTRAP: col-12 en celular, col-md-4 en escritorio -->
+            <div class="row g-3">
+
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="../Images/aula.jpg" alt="Teclado Aula F75 Max" class="img-fluid rounded mb-3"
+                                style="max-height: 140px; object-fit: contain;">
+                            <h3 class="card-title h5">Teclado Mecánico Aula F75 Max</h3>
+                            <p class="card-text small">Teclado mecánico en formato 75% highly aclamado por su excelente
+                                acústica, switches suaves y <span class="resaltado">triple modo de conexión</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="../Images/attack.avif" alt="Mouse Attack Shark X11" class="img-fluid rounded mb-3"
+                                style="max-height: 140px; object-fit: contain;">
+                            <h3 class="card-title h5">Mouse Attack Shark X11</h3>
+                            <p class="card-text small">Mouse gaming ultraligero para eSports. Incluye base de carga
+                                magnética RGB y sensor de <span class="resaltado">alta precisión</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="../Images/Wooting 80HE.jpg" alt="Teclado Wooting 80HE"
+                                class="img-fluid rounded mb-3" style="max-height: 140px; object-fit: contain;">
+                            <h3 class="card-title h5">Wooting 80HE</h3>
+                            <p class="card-text small">Teclado gaming en formato 80% TKL con interruptores analógicos
+                                <span class="resaltado">magnéticos</span> Lekker V2 y Rapid Trigger.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="../Images/Razer Viper V3 Pro.jpg" alt="Razer Viper V3 Pro"
+                                class="img-fluid rounded mb-3" style="max-height: 140px; object-fit: contain;">
+                            <h3 class="card-title h5">Razer Viper V3 Pro</h3>
+                            <p class="card-text small">Mouse <span class="resaltado">ultra ligero</span> de 54g diseñado
+                                para eSports con sensor óptico Focus Pro 35K Gen-2.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="../Images/Razer Huntsman V3 Pro TKL.webp" alt="Razer Huntsman V3 Pro TKL"
+                                class="img-fluid rounded mb-3" style="max-height: 140px; object-fit: contain;">
+                            <h3 class="card-title h5">Razer Huntsman V3 Pro TKL</h3>
+                            <p class="card-text small">Teclado <span class="resaltado">competitivo</span> con switches
+                                ópticos analógicos Gen-2 y función Rapid Trigger.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="col-12 col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="../Images/Logitech G Pro X Superlight 2.jpg" alt="Logitech G Pro X Superlight 2"
+                                class="img-fluid rounded mb-3" style="max-height: 140px; object-fit: contain;">
+                            <h3 class="card-title h5">Logitech G Pro X Superlight 2</h3>
+                            <p class="card-text small">Mouse inalámbrico <span class="resaltado">profesional</span> de
+                                60g con sensor HERO 2 e interruptores LIGHTFORCE.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN VIDEOJUEGOS CON GRILLA DE BOOTSTRAP -->
+        <section class="juegos my-5">
+            <h2 class="text-center mb-2">Videojuegos Populares</h2>
+            <p class="text-center mb-4">Diferentes experiencias de juego para aprovechar al máximo tu setup.</p>
+
+            <div class="row g-3">
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 text-center p-2">
+                        <img src="../Images/valorant.png" alt="Juego Valorant" class="img-fluid rounded mb-2 mx-auto"
+                            style="max-height: 120px; object-fit: contain;">
+                        <h3 class="card-title h5">Valorant</h3>
+                        <p class="card-text small">Shooter táctico 5v5 con <span class="resaltado">habilidades
+                                únicas</span> por agente.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 text-center p-2">
+                        <img src="../Images/elden.jpeg" alt="Juego Elden Ring" class="img-fluid rounded mb-2 mx-auto"
+                            style="max-height: 120px; object-fit: contain;">
+                        <h3 class="card-title h5">Elden Ring</h3>
+                        <p class="card-text small">RPG de acción en <span class="resaltado">mundo abierto</span> y
+                            combates épicos.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 text-center p-2">
+                        <img src="../Images/God of War Ragnarök.jpeg" alt="God of War Ragnarök"
+                            class="img-fluid rounded mb-2 mx-auto" style="max-height: 120px; object-fit: contain;">
+                        <h3 class="card-title h5">God of War Ragnarök</h3>
+                        <p class="card-text small">Aventura épica de la <span class="resaltado">mitología nórdica</span>
+                            con combate visceral.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-info text-center py-3">
+            <p><strong>Estudiante:</strong> Mateo Ortega Zapata | <strong>Institución:</strong> IE Jose Roberto Vasquez
+                B.M</p>
+            <p>
+                <strong>Contacto:</strong>
+                <a href="https://wa.me/+573228993709" target="_blank">WhatsApp</a> |
+                Redes Sociales:
+                <a href="https://www.instagram.com/18_ortega.0" target="_blank">Instagram</a> //
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- 2. CDN JAVASCRIPT BOOTSTRAP 5.3.3 (DIAPOSITIVA 4) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

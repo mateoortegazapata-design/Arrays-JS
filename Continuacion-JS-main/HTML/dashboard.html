@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Gaming - Dasboard</title>
+    <link rel="stylesheet" href="../CSS/base.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-wrap">
+                <img src="../Images/LOGO N.jpg" alt="Logo Mundo Gaming" id="logo-header" width="90" height="90">
+                <span class="insignia">Nuevo</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="Inicio.html">INICIO</a></li>
+                    <li><a href="Acerca de.html">ACERCA DE</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <a href="login.html" class="btn-salir">Salir</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="hero-section">
+            <p>Tu guía de periféricos de <span class="resaltado">alto rendimiento</span> y los mejores videojuegos.</p>
+        </section>
+
+        <h2 class="titulo-1">Periféricos Destacados</h2>
+
+        <div class="cards-grid">
+            <article class="card">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="../Images/Logitech.webp" alt="Mouse Gamer Logitech G Pro X Superlight" width="120"
+                            height="120">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mouse Gamer Logitech G Pro X Superlight</h3>
+                        <p>Diseño ultraligero de menos de 63 gramos con sensor HERO 25K. Diseñado para deportes
+                            electrónicos y precisión competitiva.</p>
+                        <p><strong>Precio aproximado:</strong> $580,000 COP</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="../Images/Razer.webp" alt="Teclado Mecánico Razer Huntsman Mini" width="120"
+                            height="120">
+                    </div>
+                    <div class="card-body">
+                        <h3>Teclado Mecánico Razer Huntsman Mini 60%</h3>
+                        <p>Switches ópticos Razer, iluminación RGB Razer Chroma y cable USB-C desmontable. Respuesta
+                            ultra rápida para shooters.</p>
+                        <p><strong>Precio aproximado:</strong> $450,000 COP</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <section id="inventario-hardware">
+            <h2>Tabla Comparativa de Hardware Gamer</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Producto</th>
+                        <th>Especificación Clave</th>
+                        <th>Nivel Gamer</th>
+                        <th>Precio (COP)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>Logitech G Pro X Superlight</td>
+                        <td>Sensor HERO 25K / 63g</td>
+                        <td>Profesional / eSports</td>
+                        <td>$580,000</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>Razer Huntsman Mini</td>
+                        <td>Switches Ópticos Opto-mecánicos</td>
+                        <td>Avanzado</td>
+                        <td>$450,000</td>
+                    </tr>
+                    <tr>
+                        <td>Diadema</td>
+                        <td>HyperX Cloud Alpha Wireless</td>
+                        <td>Batería de 300 horas / Audio 3D</td>
+                        <td>Avanzado</td>
+                        <td>$720,000</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor</td>
+                        <td>ASUS ROG Swift 240Hz</td>
+                        <td>1ms de respuesta / IPS G-Sync</td>
+                        <td>Profesional</td>
+                        <td>$1,600,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Costo Total del Set-up Sugerido:</td>
+                        <td>$3,350,000 COP</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+    <aside class="btn-flotante">
+        <h3> Realizar Pedido Directo</h3>
+        <form action="https://wa.me/573228993709" method="GET" target="_blank">
+            <div class="form-group">
+                <label for="prod">Producto de interés:</label>
+                <input type="text" id="prod" class="form-control" placeholder="Ej. Mouse Logitech" required>
+            </div>
+            <div class="form-group">
+                <label for="cant">Cantidad:</label>
+                <input type="number" id="cant" class="form-control" value="1" min="1" required>
+            </div>
+            <button type="submit" class="btn-whatsapp">Pedir por WhatsApp</button>
+        </form>
+    </aside>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Estudiante:</strong> Mateo Ortega Zapata | <strong>Institución:</strong> IE Jose Roberto Vasquez
+                B.M</p>
+            <p>
+                <strong>Contacto:</strong>
+                <a href="https://wa.me/+573228993709" target="_blank">WhatsApp</a> |
+                Redes Sociales:
+                <a href="https://www.instagram.com/18_ortega.0?igsh=dnAweDYwZWx2cGo4&utm_source=qr"
+                    target="_blank">Instagram</a> //
+                <a href="https://www.facebook.com/share/17StjmzVig/?mibextid=wwXIfr" target="_blank">Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script de JavaScript al final del body -->
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
