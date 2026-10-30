@@ -43,9 +43,6 @@ simularVentasSemanales("Semana de Lanzamiento", 50000, 1000000);
 // CASO 2: Semana Normal / Baja (No alcanza la meta de $2.500.000 COP)
 simularVentasSemanales("Semana Regular", 30000, 2500000);
 
-// ==========================================
-// TALLER ARRAYS Y MÉTODOS - MUNDO GAMING
-// ==========================================
 
 // 1. Declaración de dos arreglos paralelos (Nombres en plural y uso de const)
 const productosGamer = [
@@ -108,3 +105,55 @@ if (listaFiltradaUI) {
         }
     });
 }
+
+
+
+
+// 1. Función con validación booleana
+function validarContrasena(clave) {
+    return clave.length >= 6; // Retorna true si tiene 6 o más caracteres, false si no[cite: 62]
+}
+
+// 2. Función con 2 parámetros y return
+function calcularDescuento(precio, porcentaje) {
+    const rebaja = (precio * porcentaje) / 100;
+    return precio - rebaja; // Retorna el precio con el descuento aplicado[cite: 62]
+}
+
+// 3. Función flecha
+const aplicarIVA = precio => Math.round(precio * 1.19); // Retorna el precio mas 19% de IVA[cite: 60, 63]
+
+// 4. Función que conecta y llama a otra función (incluye condicional if)
+function registrarUsuarioGamer(usuario, clave) {
+    // Llama a la función de validación booleana[cite: 63]
+    if (!validarContrasena(clave)) {
+        return `Error: La contraseña de ${usuario} es muy corta (mínimo 6 caracteres).`; //[cite: 63]
+    }
+    return `¡Bienvenido ${usuario}! Tu cuenta Gamer ha sido registrada con éxito.`; //[cite: 63]
+}
+
+
+console.log("=== SISTEMA DE FUNCIONES MUNDO GAMING ===");
+
+// Prueba 1: Validación Booleana (2 casos)
+console.log("Validar clave '12345':", validarContrasena("12345")); // false[cite: 62]
+console.log("Validar clave 'gamerPass2026':", validarContrasena("gamerPass2026")); // true[cite: 62]
+
+// Prueba 2: Función con 2 parámetros (2 casos)
+console.log("Mouse Logitech ($580,000 con 10% desc.):", calcularDescuento(580000, 10)); // 522000[cite: 62]
+console.log("Teclado Aula ($280,000 con 15% desc.):", calcularDescuento(280000, 15)); // 238000[cite: 62]
+
+// Prueba 3: Función Flecha (2 casos)
+console.log("Precio final con IVA ($100,000):", aplicarIVA(100000)); // 119000[cite: 63]
+console.log("Precio final con IVA ($450,000):", aplicarIVA(450000)); // 535500[cite: 63]
+
+// Prueba 4: Conexión entre funciones (2 casos)
+console.log(registrarUsuarioGamer("Mateo", "abc")); // Caso fallido[cite: 63]
+console.log(registrarUsuarioGamer("Carlos", "securePass123")); // Caso exitoso[cite: 63]
+
+// 5. Aplicar .filter() sobre un array de al menos 4 elementos
+const listaClaves = ["123", "passwordGamer", "sol", "admin2026", "xy"];
+const clavesValidas = listaClaves.filter(clave => validarContrasena(clave)); // Filtra según la función de validación[cite: 63]
+
+console.log("Lista completa de contraseñas:", listaClaves);
+console.log("Contraseñas válidas filtradas (>= 6 caracteres):", clavesValidas); // ['passwordGamer', 'admin2026'][cite: 63]
